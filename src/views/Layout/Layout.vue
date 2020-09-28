@@ -11,24 +11,18 @@
 </template>
 
 <script lang="ts">
-// import Vue from 'vue'
-import classCom, { Vue } from 'vue-class-component'
+import { Options, Vue } from 'vue-class-component'
 import { Header, SideBar } from '../../components/index'
 
-// @Component({
-//   components: {
-//     Header,
-//     SideBar
-//   }
-// })
-// @Component({})
+@Options({
+  components: {
+    Header,
+    SideBar
+  }
+})
 export default class Layout extends Vue {
   mounted() {
-    console.log(classCom)
-  }
-  components: {
-    Header
-    SideBar
+    console.log(Options)
   }
 }
 </script>
