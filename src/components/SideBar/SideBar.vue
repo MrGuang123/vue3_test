@@ -1,5 +1,13 @@
 <template>
-  <div class="side-bar"></div>
+  <div class="side-bar">
+    <slot name="title"></slot>
+    <ul class="menu-wrap">
+      <li class="menu-item">
+        <i class="iconfont iconadjust"></i>
+        <span>文档</span>
+      </li>
+    </ul>
+  </div>
 </template>
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
@@ -14,6 +22,5 @@ export default class SideBar extends Vue {}
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #00f;
 }
 </style>

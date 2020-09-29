@@ -11,6 +11,7 @@
 </template>
 
 <script lang="ts">
+// import Vue from 'vue'
 import { Options, Vue } from 'vue-class-component'
 import { Header, SideBar } from '../../components/index'
 
@@ -22,7 +23,7 @@ import { Header, SideBar } from '../../components/index'
 })
 export default class Layout extends Vue {
   mounted() {
-    console.log(Options)
+    console.log('mounted')
   }
 }
 </script>
